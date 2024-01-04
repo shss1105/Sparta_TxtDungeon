@@ -1,6 +1,6 @@
-﻿namespace SpartaTxt_Dungeon
+﻿namespace SpartaTxt_Dungeon_Player
 {
-    internal class Program
+    public class Player
     {
         static void Main(string[] args)
         {
