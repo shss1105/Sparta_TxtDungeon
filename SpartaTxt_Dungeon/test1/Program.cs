@@ -44,7 +44,7 @@ namespace merge
             public void AddItem(Item item)
             {
                 myItems.Add(item);
-                
+
             }
             public void PrintInventory()
             {
@@ -56,11 +56,11 @@ namespace merge
                 Console.WriteLine();
                 for (int i = 0; i < myItems.Count; i++)
                 {
-                    if (i > 0) 
+                    if (i > 0)
                     {
                         Console.WriteLine(myItems[i].itemName);
                     }
-                    else if(myItems[0] == null)
+                    else if (myItems[0] == null)
                     {
                         Console.WriteLine("보유 중인 아이템이 없습니다.");
                     }
@@ -125,14 +125,14 @@ namespace merge
         }
 
 
-    
+
         static void Main(string[] args)
         {
-            
+
             StartScene();
             GamePlay();
         }
-        
+
 
         public static void GamePlay() //게임 시작 화면
         {
