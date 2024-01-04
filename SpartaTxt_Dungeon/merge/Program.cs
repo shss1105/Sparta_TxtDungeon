@@ -1,4 +1,5 @@
-﻿using static merge.Program.Item;
+﻿using static merge.Program;
+using static merge.Program.Item;
 
 namespace merge
 {
@@ -121,32 +122,31 @@ namespace merge
                 MarketItem.Add(new Item("스파르타의 창", 1, 7, "스파르타의 전사들이 사용했다는 전설의 창입니다.", 2100, true));
             }
         }
+
+
     
         static void Main(string[] args)
         {
+            
             StartScene();
+            GamePlay();
         }
         
 
-        public static void StartScene() //게임 시작 화면
+        public static void GamePlay() //게임 시작 화면
         {
-            Console.WriteLine("스파르타 마을에 오신 여러분 환영합니다\n이곳에서 던전으로 들어가기전 활동을 할 수 있습니다.");
-            Console.WriteLine();
-            Console.WriteLine("1. 상태 보기\n2. 인벤토리\n3. 상점");
-            Console.WriteLine();
-            Console.WriteLine("원하시는 행동을 입력해주세요.\n>>");
+            Player player1 = new Player();
+            Market market = new Market();
+            player1.Name = "rtan";
+            player1.Job = "전사";
+            player1.Damage = 5;
+            player1.armor = 1;
+            player1.Health = 10;
+            player1.Gold = 100;
+            bool isPlaying = true;
 
-
-            while (true)
+            while (isPlaying)
             {
-                Player player1 = new Player();
-                Market market = new Market();
-                player1.Name = "rtan";
-                player1.Job = "전사";
-                player1.Damage = 5;
-                player1.armor = 1;
-                player1.Health = 10;
-                player1.Gold = 100;
                 int StartSceneNum = int.Parse(Console.ReadLine());
 
                 if (StartSceneNum == 1)
@@ -159,7 +159,9 @@ namespace merge
                     int InfoNum = int.Parse(Console.ReadLine());
                     if (InfoNum == 0)
                     {
-                        break;
+                        Console.Clear();
+                        Console.WriteLine("초기 화면으로 돌아갑니다.");
+                        StartScene();
                     }
                     else
                     {
@@ -214,6 +216,14 @@ namespace merge
                     Console.WriteLine("잘못된 입력입니다.");
                 }
             }
+        }
+        public static void StartScene()
+        {
+            Console.WriteLine("스파르타 마을에 오신 여러분 환영합니다\n이곳에서 던전으로 들어가기전 활동을 할 수 있습니다.");
+            Console.WriteLine();
+            Console.WriteLine("1. 상태 보기\n2. 인벤토리\n3. 상점");
+            Console.WriteLine();
+            Console.WriteLine("원하시는 행동을 입력해주세요.\n>>");
         }
     }
 }
