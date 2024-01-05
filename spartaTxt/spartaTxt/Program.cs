@@ -225,7 +225,7 @@ namespace spartaTxt
                     int InventoryNum = int.Parse(Console.ReadLine());
                     if (InventoryNum == 1)
                     {
-                        Console.WriteLine("장착관리 함수 실행");
+                        Console.WriteLine("장착관리 실행");
                         break;
                     }
                     if (InventoryNum == 0)
