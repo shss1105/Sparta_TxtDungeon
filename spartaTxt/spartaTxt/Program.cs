@@ -151,12 +151,7 @@ namespace spartaTxt
 
                 if (MarketItem.Count > 0)
                 {
-                    int idx = 1;
-                    foreach (Item item in MarketItem)  
-                    {
-                        Console.WriteLine("{0}. {1} | {2} | {3} | {4}", idx, item.itemName, item.itemOption, item.itemDes, item.itemPrice);
-                        idx++;
-                    }
+                    Console.WriteLine("상점거래 기능");
                 }
                 else
                 {
