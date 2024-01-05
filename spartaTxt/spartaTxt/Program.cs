@@ -85,7 +85,7 @@ namespace spartaTxt
                 Console.WriteLine("인벤토리");
                 Console.ResetColor();
                 Console.WriteLine("보유 중인 아이템을 관리할 수 있습니다.");
-                playerItems = new List<Item>(); // 여기서 리스트를 만들면 Null 에러가 안뜸. Main에서 만드는 방법은 없을까?
+                playerItems = new List<Item>(); 
 
                 if (playerItems.Count > 0)
                 {
@@ -120,9 +120,9 @@ namespace spartaTxt
             }
             public void PrintMarketItem()
             {
-                Console.ForegroundColor = ConsoleColor.Yellow; // 색변경
+                Console.ForegroundColor = ConsoleColor.Yellow; 
                 Console.WriteLine("상점");
-                Console.ResetColor(); // 색초기화
+                Console.ResetColor(); 
                 Console.WriteLine("필요한 아이템을 얻을 수 있는 상점입니다.");
                 Console.WriteLine();
                 Console.WriteLine($"[보유 골드]\n800 G"); // 보유 골드를 어떻게 표시할까?
@@ -140,12 +140,12 @@ namespace spartaTxt
             public void Trade()
             {
                 Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Yellow; // 색변경
+                Console.ForegroundColor = ConsoleColor.Yellow; 
                 Console.WriteLine("상점 - 아이템 구매");
-                Console.ResetColor(); // 색초기화
+                Console.ResetColor(); 
                 Console.WriteLine("필요한 아이템을 얻을 수 있는 상점입니다.");
                 Console.WriteLine();
-                Console.WriteLine($"[보유 골드]\n800 G"); // 보유 골드를 어떻게 표시할까?
+                Console.WriteLine($"[보유 골드]\n800 G"); 
                 Console.WriteLine();
                 Console.WriteLine("[아이템 목록]");
 
