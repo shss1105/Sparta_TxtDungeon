@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spartaTxt", "spartaTxt\spartaTxt.csproj", "{633221F5-403C-49B3-9774-52E664D1F502}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Item", "Item\Item.csproj", "{DD7B7AE6-D0F3-42C2-947B-024269D9E0AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Player", "Player\Player.csproj", "{1792DE7B-FCB3-4780-BC38-03633D5F7804}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{633221F5-403C-49B3-9774-52E664D1F502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633221F5-403C-49B3-9774-52E664D1F502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633221F5-403C-49B3-9774-52E664D1F502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633221F5-403C-49B3-9774-52E664D1F502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7B7AE6-D0F3-42C2-947B-024269D9E0AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7B7AE6-D0F3-42C2-947B-024269D9E0AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7B7AE6-D0F3-42C2-947B-024269D9E0AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7B7AE6-D0F3-42C2-947B-024269D9E0AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1792DE7B-FCB3-4780-BC38-03633D5F7804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1792DE7B-FCB3-4780-BC38-03633D5F7804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1792DE7B-FCB3-4780-BC38-03633D5F7804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1792DE7B-FCB3-4780-BC38-03633D5F7804}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D0FCD27-6D9F-46D4-820F-705BCEF2C1CB}
+	EndGlobalSection
+EndGlobal

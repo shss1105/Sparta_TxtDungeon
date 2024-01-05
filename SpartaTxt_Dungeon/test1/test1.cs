@@ -14,7 +14,7 @@ namespace merge
             public int armor;
             public int Health;
             public int Gold;
-            public List<Item> Items;
+            public List<Item> Items; // inven에서 활용할 방법?
             public bool hasItem = false;
 
             public void PrintInfo()
@@ -68,7 +68,7 @@ namespace merge
                 }
             }
         }
-        public class Item : Player
+        public class Item
         {
             public string itemName;
             public int itemType;  // item type이 0이면 방어 아이템, 1이면 공격 아이템
@@ -111,7 +111,7 @@ namespace merge
                 Console.ResetColor(); // 색초기화
                 Console.WriteLine("필요한 아이템을 얻을 수 있는 상점입니다.");
                 Console.WriteLine();
-                Console.WriteLine($"[보유 골드]\n{Gold} G");
+                Console.WriteLine($"[보유 골드]\n800 G"); // 골드 플레이어 골드로 가져올 방법
                 Console.WriteLine();
                 Console.WriteLine("[아이템 목록]");
                 MarketItem = new List<Item>();
