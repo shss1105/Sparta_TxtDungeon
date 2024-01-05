@@ -13,7 +13,7 @@ namespace spartaTxt
             public int itemOption; // + 수치
             public string itemDes;  // 아이템 설명
             public int itemPrice;
-            bool isSold = false;  // 구매 완료인지 아닌지
+            bool isSold = false;  // 구매 완료인지 아닌지.
 
             public Item()
             {
